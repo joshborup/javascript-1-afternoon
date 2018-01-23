@@ -18,7 +18,15 @@ var name = 'Tyler';
 */
 
 //Code Here
+function isTyler(name){
 
+  if(name === 'Tyler'){
+    return true;
+  }else {
+    return false;
+  }
+
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -29,7 +37,9 @@ var name = 'Tyler';
 
 //Code Here
 
-
+function getName(){
+  return prompt('My Name');
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -42,6 +52,9 @@ var name = 'Tyler';
 
 //Code Here
 
+function welcome(){
+  alert("Welcome, " + getName());
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -52,7 +65,7 @@ var name = 'Tyler';
 
 //Answer Here
 
-
+//Arguments are passed into functions to be acted upon, while parameters are place holders (variables) for the arguments needed when making the function.
 
 ////////// PROBLEM 5 //////////
 
@@ -62,7 +75,7 @@ var name = 'Tyler';
 
 //Answer Here
 
-
+// false, 0, null, undefined, NaN, ''."", document.all
 
 ////////// PROBLEM 6 //////////
 
@@ -71,7 +84,10 @@ var name = 'Tyler';
 */
 
 //Code Here
-  
+
+function myName(){
+  return "Josh";
+}
 
 
 /*
@@ -80,7 +96,9 @@ var name = 'Tyler';
 
 //Code Here
 
-
+let newMyName = function(){
+  return "Josh";
+}
 
 /*
   Now alert the result of invoking newMyName
@@ -88,7 +106,7 @@ var name = 'Tyler';
 
 // Code Here
 
-
+alert(newMyName);
 
 ////////// PROBLEM 7 //////////
 
@@ -98,7 +116,11 @@ var name = 'Tyler';
 
 //Code Here
 
-
+function outerFn(){
+  return function(){
+    return "Josh";
+  }
+}
 
 /*
   Now save the result of invoking outerFn into a variable called innerFn.
@@ -106,10 +128,12 @@ var name = 'Tyler';
 
 //Code Here
 
-
+let innerFn = outerFn();
 
 /* 
   Now invoke innerFn.
 */
+
+innerFn();
 
 // Code Here
